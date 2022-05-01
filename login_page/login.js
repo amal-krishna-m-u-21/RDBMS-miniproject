@@ -161,3 +161,13 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
+//show password
+function visible()
+ {
+  var p = document.getElementById("password");
+  if (p.type === "password") {
+    p.type = "text";
+  } else {
+    p.type = "password";
+  }
+}
