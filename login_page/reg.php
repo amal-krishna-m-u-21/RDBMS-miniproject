@@ -1,6 +1,6 @@
 <?php
 
-Global $conn;
+global $conn;
 $names=$_POST['name'];
 $email=$_POST['email'];
 $password2=$_POST['password2'];
