@@ -8,7 +8,7 @@ $password2=$_POST['password2'];
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
-$dbname = "test";
+$dbname = "Udetails";
 
 // Create connection
 
