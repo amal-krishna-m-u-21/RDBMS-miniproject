@@ -12,7 +12,7 @@ $dbname = "Udetails";
 
 // Create connection
 
-$conn = mysqli_connect('$severname','$username','','$dbname');
+$conn = mysqli_connect('127.0.0.1','root','','Udetails');
 
 // Check connection\
 if (!$conn)
@@ -23,7 +23,7 @@ $sql = "INSERT INTO users ('',names, password2, email) VALUES ('$names','$passwo
 
 
 if (mysqli_query($conn, $sql)) {
-  echo "New record created successfully";
+  echo "New record created successfully \n";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
