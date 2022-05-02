@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
    <link rel="stylesheet" href="./login.css">
+   <script src="reg-validation.js"></script>
 
 </head>
 <body>
@@ -63,7 +65,7 @@
     </div>
     <div class="group">
       <label class="fas fa-key" for="password2"></label>
-      <input type="password" name="password2" placeholder=" confirm password"/>
+      <input type="password" name="password2" id="password" placeholder=" confirm password"/>
       <br><small> show password</small><input type="checkbox" onclick="visible()">
     </div>
     <button id="login" type="submit">Register</button>
@@ -74,7 +76,7 @@
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.js'></script><script  src="./reg.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.js'></script><script  src="./reg-animation.js"></script>
 
 </body>
 </html>

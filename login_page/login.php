@@ -20,12 +20,17 @@
       // If result matched $myeamil and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         session_register("myusername");
+         session_register("myemail");
          $_SESSION['login_user'] = $myemail;
-         header("location:/homepage/dashboard.php");
+         header("location:dashboard.html");
       }else 
       {
-         $error = "Your Login Name or Password is invalid";
+// PHP program to pop an alert
+// message box on the screen
+  
+// Display the alert box 
+echo '<script>alert("Invalid User-email and Password")</script>';
+          header ("location:login.html");
       }
    }
 ?>

@@ -23,7 +23,7 @@ $sql = "INSERT INTO users ('',names, password2, email) VALUES ('$names','$passwo
 
 
 if (mysqli_query($conn, $sql)) {
-  header("Location:login.html");
+  header("Location:intrest.html");
 exit();
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
