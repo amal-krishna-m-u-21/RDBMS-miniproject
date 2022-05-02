@@ -90,7 +90,25 @@ function validateForm() {
       p.type = "password";
     }
   }
-  
+  function visiblei()
+  {
+   var p2 = document.getElementById("password2");
+   if (p2.type === "password") {
+     p2.type = "text";
+   } else {
+     p2.type = "password";
+   }
+ }
+ function visiblel()
+ {
+  var pl = document.getElementById("pswd");
+  if (pl.type === "password") {
+    pl.type = "text";
+  } else {
+    pl.type = "password";
+  }
+}
+ 
   function validateFormlog() {
   
     var x = document.forms["loginPage"]["email"].value;
