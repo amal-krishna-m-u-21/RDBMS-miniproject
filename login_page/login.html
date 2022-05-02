@@ -34,9 +34,9 @@
       <br><small> show password</small><input type="checkbox" onclick="visiblel()">
  
     </div>
-    <div class="group">
-      <button id="login" type="submit">login</button>
-    </div>
+   <div class="group">
+      <button class="button" id="login" type="submit">login</button>
+    </div><br>
     <div class="tiny-text"><a href=forgot.html> Forgot password?</a></div>
   </form>
 
@@ -50,7 +50,7 @@
 
 
 
-  <form class="registerPage" name="registerPage" action="reg.php"  onsubmit="return validateForm()" method="POST" required>
+  <form class="registerPage" name="registerPage" action="prereg.php"  onsubmit="return validateForm()" method="POST" required>
     <h1>Create Account</h1>
     <div class="group">
       <label class="fas fa-signature" for="name"></label>
@@ -69,7 +69,7 @@
       <input type="password" name="password2" id="password2" placeholder=" confirm password"/>
       <br><small> show password</small><input type="checkbox" onclick="visible(),visiblei()">
     </div>
-    <button id="register" type="submit">Register</button>
+    <button class="button" id="register" type="submit">Register</button>
   </form>
   <div class="cover">
     <button id="changePage" name="changePage"></button>

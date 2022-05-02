@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .card {
   box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   width: 800px;
@@ -70,8 +71,8 @@ body {
   height: 480px;
   border-radius: 0px;
 }
-.card .loginPage #login,
-.card .registerPage #login {
+.card .loginPage .login,
+.card .registerPage .login {
   margin-top: 4px;
   width: 100px;
   height: 40px;
@@ -136,5 +137,25 @@ body {
 .tiny-text{ 
   color: #fff;
   background-color: hsla(0, 30%, 75%, 0.71);
-  font-size: 10px;
+  font-size: 11px;
+}
+.button {
+  padding: 15px 30px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
