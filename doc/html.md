@@ -98,19 +98,23 @@ Attribute - action Value- URL Description- specifies where to send the form-data
 Attribute -rel Value - external hel license next nofollow nooener norefferer openere prev search  Description- specifies the relaionship vetween a linked resource and the current document 
 
 Attribute - target Value- _blank _self _parent  _top Description- specifies where to display the repose that is received after submitting the form
+ 
+ 
+ 
+ 
 
-### 1.6<    input type="" name ="" placeholder="">//line no:29;
+### 1.6   <    input type="" name ="" placeholder="">//line no:29;
 
 The placeholder attribute specifies a short hint that describes the expected value of an input field (e.g. a sample value or a short description of the expected format). The short hint is displayed in the input field before the user enters a value.
 
-### 1.6   Attribute -> onclick=""//line no:34;
+### 1.7  Attribute -> onclick=""//line no:34;
  The Html <button onclick=" "> is an event attribute, which executes a script when the button is clicked. This attribute is supported by all browsers. It is also used to call a function when the button is clicked.
- ### 1.7 <     a href="URL"> //line no :40;
+ ### 1.8   <     a href="URL"> //line no :40;
  The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination. By default, links will appear as follows in all browsers: An unvisited link is underlined and blue.
 
-### 1.8   Attribute-> onsubmit="" //line no:25;
+### 1.9   Attribute-> onsubmit="" //line no:25;
 The purpose of the HTML onsubmit attribute is to execute the code specified, when the associated form is submitted. HTML onsubmit attribute supports form element. Script. A script which is to be executed.
 
-## 2.forgot.html Location::/login_Page;
-## 3.interest.html Location:/login_page;
-## 4.dashboard.html; Location:/login_Page;
+## 2  forgot.html Location::/login_Page;
+## 3 interest.html Location:/login_page;
+## 4 dashboard.html; Location:/login_Page;
