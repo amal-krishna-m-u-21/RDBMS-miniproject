@@ -1,10 +1,10 @@
 
 # HTML
 
-## 1.login.htmnl Location:/login_page;
+## 1.login.html Location:/login_page;
 
 
-### 1.1. <link rel="value"> //line no:08;
+### 1.1 < link rel="value"> //line no:08;
 
 
 
@@ -30,7 +30,7 @@ search	Provides a link to a resource that can be used to search through the curr
 stylesheet	Imports a style sheet
 
 
-### 1.2. <script src="URL" ></script>//line no:09;
+### 1.2. < script src="URL" >< /script>//line no:09;
 
 If you want to run the same JavaScript on several pages in a web site, you should create an external JavaScript file, instead of writing the same script over and over again. Save the script file with a .js extension, and then refer to it using the src attribute in the <script> tag.
 
@@ -38,7 +38,7 @@ Note: The external script file cannot contain the <script> tag.
 
 Note: Point to the external script file exactly where you would have written the script.
 
-### 1.3 <div class=""></div>//first occurence line:14;
+### 1.3  div class="">< /div>//first occurence line:14;
 
 The <div> tag defines a division or a section in an HTML document.
 
