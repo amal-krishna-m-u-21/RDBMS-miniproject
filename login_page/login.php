@@ -28,7 +28,7 @@
 // message box on the screen
   
 // Display the alert box 
-echo '<script>alert("Invalid User-email and Password")</script>';
+echo '<script>alert("Invalid User-email and Password")</script>';//bug:01
           header ("location:login.html");
       }
    }

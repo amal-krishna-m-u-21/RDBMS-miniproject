@@ -1,5 +1,4 @@
 <?php
-
 global $conn;
 $names=$_POST['name'];
 $email=$_POST['email'];
