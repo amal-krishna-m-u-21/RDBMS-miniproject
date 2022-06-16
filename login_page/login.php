@@ -3,7 +3,7 @@
   $servername = "127.0.0.1";
   $username = "root";
   $password = "";
-  $dbname = "Udetails";
+  $dbname = "project";
 
    $db = mysqli_connect($servername,$username,$password,$dbname);
    session_start();
@@ -15,7 +15,7 @@
       $myemail = mysqli_real_escape_string($db,$_POST['email']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT id FROM test WHERE  email= '$myemail' and password2 = '$mypassword'";
+      $sql = "SELECT user_id FROM User_details WHERE  email= '$myemail' and password2 = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       
