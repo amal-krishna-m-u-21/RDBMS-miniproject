@@ -1,6 +1,11 @@
 <?php
   
-   $db = mysqli_connect('127.0.0.1','root','','test');
+  $servername = "127.0.0.1";
+  $username = "root";
+  $password = "";
+  $dbname = "Udetails";
+
+   $db = mysqli_connect($servername,$username,$password,$dbname);
    session_start();
   
 
