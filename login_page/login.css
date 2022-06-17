@@ -10,7 +10,7 @@
 }
 html,
 body {
-  background-color: rgb(226, 208, 208);
+  background-color: #EAEBED;
   width: 100%;
   height: 100%;
   display: flex;
@@ -19,7 +19,8 @@ body {
 }
 
 .card {
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  box-shadow:  2px 2px 4px #01676e;
+  color: #04AA6D;
   width: 800px;
   height: 480px;
   border-radius: 8px;
@@ -36,13 +37,13 @@ body {
   height: 200px;
   margin-top: 100px;
   z-index: 4;
-  color: #fff;
+  color: #FFFFFF;
   position: absolute;
   padding: 16px;
 }
 .card .wordLeft label,
 .card .wordRight label {
-  color: #9b4b4b;
+  color: #3A7B99;
   font-weight: 900;
   position: absolute;
   margin-top: 239px;
@@ -59,7 +60,7 @@ body {
 }
 .card .loginPage,
 .card .registerPage {
-  color: #9b4b4b;
+  color: #008cbb;
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -79,7 +80,7 @@ body {
   border-radius: 16px;
   border: none;
   color: #fff;
-  background-color: #9b4b4b;
+  background-color: #3A7B99;
   cursor: pointer;
 }
 .card .loginPage .fab.fa-facebook,
@@ -94,12 +95,13 @@ body {
   height: 40px;
   border-radius: 16px;
   color: #fff;
-  background-color: #9b4b4b;
+  background-color: #3A7B99;
   cursor: pointer;
 }
 .card .loginPage .group,
 .card .registerPage .group {
   margin: 8px;
+
 }
 .card .loginPage .group label,
 .card .registerPage .group label {
@@ -120,8 +122,8 @@ body {
   border-radius: 0px;
   position: absolute;
   right: 0px;
-  background-color: #9b4b4b;
-  color: #fff;
+  background-color: #3A7B99;
+  color: rgb(211, 211, 211);
 }
 .card .cover #changePage {
   position: absolute;
@@ -130,14 +132,52 @@ body {
   border-radius: 16px;
   border: none;
   margin-top: 160px;
-  color: #9b4b4b;
+  color: #3A7B99;
   background-color: #fff;
   font-size: 20px;
 }
+input[type="date"]{
+  background-color: #008cbb;;
+  padding:5px;
+  align-items:center;
+  font-family: "Roboto mono",monospace;
+  color:#ffffff;
+  font-size: 15px;
+  border:none;
+  outline:none;
+  border-radius:35px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  
+  
+}
+.date:hover{background-color: #4ac3ff;
+  color:#201b1b;
+  font-size: 15px;
+  border:none;
+  outline:none;
+  border-radius:25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  }
+::-webkit-calendar-picker-indicator{
+  background-color: #ffffff;
+  padding:2px;
+  cursor:pointer;
+  border-radius: 15px;
+
+}
 .tiny-text{ 
-  color: #fff;
-  background-color: hsla(0, 30%, 75%, 0.71);
-  font-size: 11px;
+  font-family: "Roboto mono",monospace;
+  color: #008cbb;
+  font-size: 12px;
+}
+.tiny-text:hover{ 
+ 
+  background-color: #96e0fda4;
+  font-size:15px;
+  border-radius: 10px;
+  
 }
 .button {
   padding: 15px 30px;
@@ -145,17 +185,17 @@ body {
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: #04AA6D;
+  color: #FFFFFF;
+  background-color: #A5DEF1;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 5px #999;
+  box-shadow: 0 5px #2E424D;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {background-color: #00ccff}
 
 .button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  background-color: #00b89f;
+  box-shadow: 0 5px #2E424D;
   transform: translateY(4px);
 }

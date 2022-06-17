@@ -1,10 +1,10 @@
 //form validation fn();for password and name ,email
 function validateForm() {
-    var x = document.forms["registerPage"]["name"].value;
-    if (x == "" || x == null) {
-      alert("Name must be filled out");
-     return false;
-    }
+  var x = document.forms["registerPage"]["name"].value;
+  if (x == "" || x == null) {
+    alert("Name must be filled out");
+    return false;
+  }
   
     var y = document.forms["registerPage"]["password"].value;
     var z = document.forms["registerPage"]["password2"].value;
@@ -19,6 +19,8 @@ function validateForm() {
       alert("Email must be filled out");
      return false;
     }
+
+
     else{alert ("Welcome!!! \n Please Login !!!");}
   }
   //validation for length and character included in password only for password;
