@@ -7,12 +7,6 @@ $password2=$_POST['password2'];
 $dob=$_POST['dob'];
 $hashedpswd=md5($password2);
 
-
-// Check connection\
-if (!$conn)
- {
-  die("Connection failed: " . mysqli_connect_error());
-}
 $exists = mysqli_query($conn,"SELECT * FROM  User_details WHERE user_id ='1'");
 
 if($exists != FALSE)

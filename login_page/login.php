@@ -18,8 +18,7 @@
         $upass = $row['password2'];
         
 
-        if(md5($mypassword) == $upass)
-        {
+        if(md5($mypassword) == $upass) {
          $un = $row['user_name'];
          $_SESSION['login_user'] = $un;
          header("location:dashboard.php");
@@ -28,6 +27,7 @@
         else
         {
            header("location:wrongpswd.php");
+         
         }
 
      }
