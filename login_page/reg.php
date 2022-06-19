@@ -1,6 +1,16 @@
 <?php
 global $conn;
-include('config.php');
+$servername = "127.0.0.1";
+  $username = "root";
+  $password = "";
+  $dbname = "project";
+
+   $conn = mysqli_connect($servername,$username,$password,$dbname);
+ if (!$conn)
+ {
+  die("Connection failed: " . mysqli_connect_error());
+} 
+
 $names=$_POST['name'];
 $email=$_POST['email'];
 $password2=$_POST['password2'];
@@ -40,7 +50,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   $count = mysqli_num_rows($result);
   if($count== 0){
 
-$sql = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('$names','$dob','$hashedpswd','$email')";
+    $sql = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('root','00-00-0000','$hashedpswd','$email')";
+
+    $sql = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('$names','$dob','$hashedpswd','$email')";
 
 
 if (mysqli_query($conn, $sql)) {
