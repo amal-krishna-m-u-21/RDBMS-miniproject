@@ -19,8 +19,15 @@
         
 
         if(md5($mypassword) == $upass) {
-         $un = $row['user_name'];
-         $_SESSION['login_user'] = $un;
+           $admin = $row['email'];
+           $a=1;
+           $un = $row['user_name'];
+           $_SESSION['login_user'] = $un;
+           if($admin == 'admin@gmail.com')
+         { header("location:sudo.php");
+         }
+           else if($a==1)
+           {
          header("location:dashboard.php");
 
         }
@@ -36,5 +43,5 @@
         {
            header("location:wrongpswd.php");
         }
-   }
+   }}
 ?>

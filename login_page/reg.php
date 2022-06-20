@@ -21,9 +21,12 @@ if($exists != FALSE)
     email VARCHAR(30) NOT NULL, password2 VARCHAR(256) NOT NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     )";
-    
-    if (mysqli_query($conn, $sql)) {
-     $a=1;
+      
+      
+      if (mysqli_query($conn, $sql)) {
+        $aps = md5("Admin@root001.");
+        $sql1 = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('root','00-00-0000','$aps','admin@gmail.com')";
+         mysqli_query($conn,$sql1);
     } else {
       echo "Error creating table: " . mysqli_error($conn);
     }
@@ -33,6 +36,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   // username and password sent from form 
   
   $myemail = mysqli_real_escape_string($conn,$_POST['email']); 
+  if($myemail=="admin@gamil.com")
+  { alert("account already exit");
+  exit();
+  }
+  else{
   
   $sql1 = "SELECT user_id  FROM User_details  WHERE  email= '$myemail'";
   $result = mysqli_query($conn,$sql1);
@@ -41,8 +49,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   $count = mysqli_num_rows($result);
   if($count== 0){
 
-    $sql = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('root','00-00-0000','$hashedpswd','$email')";
-
+ 
     $sql = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('$names','$dob','$hashedpswd','$email')";
 
 
@@ -60,5 +67,5 @@ mysqli_close($conn);}
 else
 {
   header("location:login.html");
-}}
+}}}
 ?>

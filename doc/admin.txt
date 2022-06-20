@@ -1,0 +1,6 @@
+      admin login details
+        
+        email= admin@gmail.com
+        user_name = root
+        password = Admin@root001.
+        dob = 00-00-0000
