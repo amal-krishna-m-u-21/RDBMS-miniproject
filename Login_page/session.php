@@ -11,7 +11,7 @@
     $_SESSION['login_session'] = $row['user_id'];
    
    if(!isset($_SESSION['login_user'])){
-      header("location:login.html");
+      header("location:index.php");
       die();
    }
 ?>

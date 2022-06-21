@@ -66,6 +66,6 @@ else
 mysqli_close($conn);}
 else
 {
-  header("location:login.html");
+  header("location:index.php");
 }}}
 ?>
