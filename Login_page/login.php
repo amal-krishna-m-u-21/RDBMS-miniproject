@@ -24,17 +24,19 @@
            $un = $row['user_name'];
            $_SESSION['login_user'] = $un;
            if($admin == 'admin@gmail.com')
-         { header("location:../Admin_dashboard/sudo.php");
+         { header('location:http://'.$_SERVER['HTTP_HOST'].'/Admin_dashboard/sudo.php');
+            exit();
          }
            else if($a==1)
            {
          header("location:dashboard.php");
+         exit();
 
         }
         else
         {
            header("location:wrongpswd.php");
-         
+         exit();
         }
 
      }

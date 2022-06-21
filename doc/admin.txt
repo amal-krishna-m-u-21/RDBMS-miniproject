@@ -4,3 +4,8 @@
         user_name = root
         password = Admin@root001.
         dob = 00-00-0000
+
+
+
+        //for redirecting 
+        header('location:http://'.$_SERVER['HTTP_HOST'].'/Admin_dashboard/sudo.php');
