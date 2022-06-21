@@ -24,7 +24,7 @@
            $un = $row['user_name'];
            $_SESSION['login_user'] = $un;
            if($admin == 'admin@gmail.com')
-         { header("location:sudo.php");
+         { header("location:../Admin_dashboard/sudo.php");
          }
            else if($a==1)
            {

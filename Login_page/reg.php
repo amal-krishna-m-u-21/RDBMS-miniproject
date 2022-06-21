@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   
   $myemail = mysqli_real_escape_string($conn,$_POST['email']); 
   if($myemail=="admin@gamil.com")
-  { alert("account already exit");
+  { header("Location:wrongpswd.php");;
   exit();
   }
   else{
