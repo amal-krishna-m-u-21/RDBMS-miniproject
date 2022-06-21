@@ -1,4 +1,5 @@
 <?php
+session_start();
 global $conn;
 include('config.php');
 
@@ -16,7 +17,7 @@ if($exists != FALSE)
 }else
 {
   $sql = "CREATE TABLE User_details (
-    user_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    user_id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     user_name VARCHAR(30) NOT NULL,dob DATE NOT NULL ,
     email VARCHAR(30) NOT NULL, password2 VARCHAR(256) NOT NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -51,10 +52,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
  
     $sql = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('$names','$dob','$hashedpswd','$email')";
-
+    $_SESSION['login_user'] = $names;
 
 if (mysqli_query($conn, $sql)) {
-  header("Location:interest.php");
+  header('Location:interest.php');
 exit();
 } 
 
@@ -67,5 +68,6 @@ mysqli_close($conn);}
 else
 {
   header("location:index.php");
+  exit();
 }}}
 ?>
