@@ -1,3 +1,9 @@
+<?php
+include('config.php');
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -14,6 +20,22 @@
               <?php
               include('loginpage.php');
               ?>
+
+                                            <?php
+                                                   if(isset($_SESSION['status_interest']))
+                                                     {
+                                                       $status=$_SESSION['status_interest'];
+                                                       if($status = "Inserted succesfully")
+                                                       { 
+                                                         echo '<script>alert( Registration Please Login")</script>';
+                                                       }
+                                                       else
+                                                       {
+                                                        echo '<script>alert( Registration Failed")</script>';
+                                                       }
+                                                      }
+                                                      session_destroy();
+                                            ?>
                     <!-- regpage.php : Registration page-->
               <?php
               include('regpage.php');
