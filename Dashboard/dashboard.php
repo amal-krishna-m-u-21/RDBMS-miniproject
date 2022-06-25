@@ -22,10 +22,9 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard-<?= $row['user_name']; ?></title>
+    <title><?= $row['user_name']; ?> Dashboard</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
@@ -79,19 +78,22 @@ else{
 
     <!-- Review details section  -->
     <section class="review_details" id="review_details">
-    <?php include('personal_details.php'); ?>
+    <?php include('review_details.php'); ?>
 
 
     </section>
 
     <!-- Leaderboard section  -->
-
     <section class="Leaderboard" id="Leaderboard">
 
-       <?php include('logout.php');
-       ?>
+<?php 
+
+echo"select interest And category";
+
+?>
 
 </section>
+
 
 </div>
 
