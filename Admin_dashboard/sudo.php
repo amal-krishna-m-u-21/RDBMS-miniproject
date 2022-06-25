@@ -20,6 +20,8 @@
          $result = mysqli_query($conn,$sql);
          $row = mysqli_fetch_assoc($result);
          include('add_interest.php');
+         include('add_app.php');
+         include('add_web.php');
          ?> 
   
   
