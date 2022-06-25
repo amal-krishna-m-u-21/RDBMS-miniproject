@@ -29,7 +29,7 @@
          }
            else if($a==1)
            {
-         header("location:dashboard.php");
+            header('location:http://'.$_SERVER['HTTP_HOST'].'/Dashboard/dashboard.php');
          exit();
 
         }
