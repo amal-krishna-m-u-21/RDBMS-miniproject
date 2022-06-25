@@ -24,5 +24,5 @@
    <div class="group">
       <button class="button" id="login" type="submit">login</button>
     </div><br>
-    <div class="tiny-text"><a href=forgot.html> Forgot password?</a></div>
+    <div class="tiny-text"><a href=../Password_reset/forgot.php> Forgot password?</a></div>
   </form>

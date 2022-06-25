@@ -27,15 +27,33 @@ session_start();
                                                        $status=$_SESSION['status_interest'];
                                                        if($status = "Inserted succesfully")
                                                        { 
-                                                         echo '<script>alert( Registration Please Login")</script>';
+                                                         echo '<script>alert( "Registration successful Please Login")</script>';
                                                        }
                                                        else
                                                        {
-                                                        echo '<script>alert( Registration Failed")</script>';
+                                                        echo '<script>alert( "Registration Failed")</script>';
                                                        }
                                                       }
+
+                                                      //password reset
+                                                      if(isset($_SESSION['status_paswd']))
+                                                      {
+                                                        $status=$_SESSION['status_paswd'];
+                                                        if($status = "password reset successfully")
+                                                        { 
+                                                          echo '<script>alert( Password Updated")</script>';
+                                                        }
+                                                      }
+
+
+
                                                       session_destroy();
+                                            
+                                            
+                                            
                                             ?>
+
+
                     <!-- regpage.php : Registration page-->
               <?php
               include('regpage.php');

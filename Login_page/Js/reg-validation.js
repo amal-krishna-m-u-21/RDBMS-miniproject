@@ -118,6 +118,6 @@ function validateForm() {
       alert("Email must be filled out");
      return false;
     }
-    else{alert ("Welcome!!!");
+    else{alert ("Done!!!");
   }
   }

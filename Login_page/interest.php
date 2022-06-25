@@ -52,6 +52,7 @@ if($exists == FALSE)
   <title>Document</title>
 </head>
 <body>
+  <button name="prev" id="prev" onclick="window.history.back()">PREV</button>
   <header><h1>
     Find your Interest
 </h1>
