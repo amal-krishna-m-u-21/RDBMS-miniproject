@@ -8,11 +8,21 @@
          $result = mysqli_query($conn,$sql);
 
 if($result)
-{}
-else{
-  echo "<br> Error : ". "<br>" . mysqli_error($conn) ."<br>"."GO back & try Selecting DOb";
+{
+    $row = mysqli_fetch_array($result);
 }
-         $row = mysqli_fetch_array($result);
+else{
+    echo "<br> Error : ". "<br>" . mysqli_error($conn) ."<br>"."GO back & try Selecting DOb";
+}
+        
+       //using count and sum (aggregate functions)
+         $sql1="SELECT COUNT(*) AS count FROM Rating WHERE user_id=$ls";
+         $sql2="SELECT SUM(rating) AS sum FROM Rating WHERE user_id=$ls";
+         $result1=mysqli_query($conn,$sql1);
+         $result2=mysqli_query($conn,$sql2);
+         $count=mysqli_fetch_array($result1);
+         $sum =mysqli_fetch_array($result2);
+       
        ?>
 
 
@@ -28,6 +38,8 @@ else{
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
+    <!-- custom css-->
+
 
 </head>
 <body>
@@ -39,8 +51,8 @@ else{
         <img src="person.svg" hight="15rem" width="15rem" alt="">
         <div class="name"> <?= $row['user_name']; ?> </div>
         <div class="review">
-        <button class="button" onclick="window.location='#review_details'">Total review<br>256</button>
-        <button class="button"  onclick="window.location='#review_details'">Total rating<br>5000</button>
+        <button class="button" onclick="window.location='#review_details'">Total review<br><?= $count['count'] ?></button>
+        <button class="button"  onclick="window.location='#review_details'">Total rating<br><?= $sum['sum'] ?></button>
     </div>
     </div>
 

@@ -12,7 +12,7 @@
          </h1> 
       </hearder>
       <?php 
-         session_start();
+         //session_start();
          include('session.php');
          $ls=$_SESSION['login_session'];
          //fetching details

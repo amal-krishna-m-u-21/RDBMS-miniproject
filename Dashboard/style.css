@@ -10,11 +10,13 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body{
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     min-height: 100vh;
     display: flex;
     align-items: flex-start;
@@ -27,6 +29,9 @@ body{
 section{
     padding:1rem 7%;
     min-height: 100%;
+    margin:20%;
+    margin-top: 0px;
+   
 }
 
 .btn{
@@ -119,6 +124,7 @@ header .navbar ul li a:hover{
     box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
     backdrop-filter: blur(.4rem);
     border-radius: 1rem;
+
     overflow: hidden;
 }
 
