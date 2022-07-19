@@ -5,7 +5,7 @@ if($exists == FALSE)
 {
 
     $sql ='CREATE TABLE Rating (
-        r_id INT(11) UNSIGNED AUTO_INCREMENT  PRIMARY KEY,web_id INT(11) ,app_id INT(11) ,user_id INT(11) NOT NULL,rating INT(5)  DEFAULT "0", review VARCHAR(2048) NOT NULL,reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+        r_id INT(11) UNSIGNED AUTO_INCREMENT  PRIMARY KEY,web_id INT(11) ,app_id INT(11) ,user_id INT(11) NOT NULL,rating FLOAT(5)  DEFAULT "0", review VARCHAR(2048) NOT NULL,reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
         )';
       if (mysqli_query($conn, $sql)) 
       {

@@ -6,7 +6,7 @@ if($exists == FALSE)
 
     $sql ='CREATE TABLE App (
         app_id INT(11) UNSIGNED AUTO_INCREMENT  PRIMARY KEY,
-        app_name VARCHAR(30) NOT NULL, url VARCHAR(2048)  NOT NULL ,description VARCHAR(120) NOT NULL,user_id INT(11) NOT NULL,leaderboard_rating INT(11) NOT NULL,reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+        app_name VARCHAR(30) NOT NULL, url VARCHAR(2048)  NOT NULL ,description VARCHAR(120) NOT NULL,user_id INT(11) NOT NULL,leaderboard_rating FLOAT(11) NOT NULL,reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
         )';
       if (mysqli_query($conn, $sql)) 
       {
