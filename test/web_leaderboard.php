@@ -73,7 +73,7 @@ if (!$sql_sorted_list)
 foreach ($sql_sorted_list as $item) //using foreach loop fetching each row and displaying it's data accordingly
 {
 ?>
-      <h1><?= $item['web_name']; ?></h1><br><!-- Displaying web name -->
+      <h1><?= $item['web_name']; ?>  <?= $item['leaderboard_rating']; ?>  </h1><br><!-- Displaying web name -->
       <h2>for more details</h2><a href="<?= $item['url']; ?>">click here</a><!-- For web url -->
     <?php
 }

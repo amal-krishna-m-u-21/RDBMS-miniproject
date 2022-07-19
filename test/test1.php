@@ -54,7 +54,7 @@ for ($j = 1; $j < $i; $j++)
     $update = "UPDATE App SET  leaderboard_rating='$lrating' WHERE app_id='$app_id'";//updating App table with the average rating of that particualr app
     if (!mysqli_query($conn, $update)) 
     {
-      echo "error";
+      echo "error update";
     }
 
     $app_id++;//app id is incremented so that it will check the next apps average rating and update in record of respective app in the table App
@@ -67,7 +67,7 @@ $sql_order = "SELECT url,leaderboard_rating,app_name FROM App ORDER BY leaderboa
 $sql_sorted_list = mysqli_query($conn, $sql_order);//execution of query
 if (!$sql_sorted_list) 
 {
-  echo "error";
+  echo "error sorting";
 }
 
 foreach ($sql_sorted_list as $item) //using foreach loop fetching each row and displaying it's data accordingly
