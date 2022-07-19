@@ -29,7 +29,7 @@ if (!$conn) {
     <?php
 
 
-$app_id = 1;//for using in the for fetching data of each app to find avg ,we will update this app id to find avg of next app with next app id
+$app_id = 1;//for using in the for fetching data of each app to find avg ,we will increment this app id to find avg of next app with next app id
 $lrating;//for storing rating ,after that we will update it to App table 
 
 
