@@ -33,15 +33,37 @@ $sql = "SELECT 	app_id,AVG(rating) AS rating FROM  Rating WHERE app_id='$app_id'
 $result=mysqli_query($conn,$sql);
 $rows = mysqli_fetch_assoc($result);
 if($result!=0){
-  
-  ?>
-<h1><?= $rows['app_id']; ?> </h1> Has a rating of 
-<h2><?= $rows['rating']; ?> </h2><br>
-<?php
+  $lrating=$rows['rating'];
+  echo"$lrating";
+  $update="UPDATE App SET  leaderboard_rating='$lrating' WHERE app_id='$app_id'";
+  echo"$lrating";
+  if(!mysqli_query($conn,$update))
+  {
+    echo"error";
+  }
+
 $app_id++;
 
 
 }}
+
+
+
+$sql_order="SELECT url,leaderboard_rating,app_name FROM App ORDER BY leaderboard_rating DESC";
+$sql_sorted_list=mysqli_query($conn,$sql_order);
+if(!$sql_sorted_list)
+{
+  echo"error";
+}
+
+$row=mysqli_fetch_assoc($sql_sorted_list);
+foreach($sql_sorted_list as $item)
+{
+  ?>
+  <h1><?= $item['app_name'];?></h1><br><h2>for more details</h2><a href="<?= $item['url'];?>">click here</a>
+<?php
+}
+
 
 ?>
 
