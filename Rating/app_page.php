@@ -35,6 +35,7 @@ else{
     $app=mysqli_fetch_assoc($result);
     ?>
     <div class="card"> 
+        
         <header>
     <section ="app_details">
     <h1><i><?= $name; ?></i></h1>
@@ -66,7 +67,7 @@ else{
 
 
 
-    <?php
+<?php
 }
 
 
@@ -76,5 +77,7 @@ else{
 
 ?>
     </div>
+    
+    <button class="btn"name="prev" id="prev" onclick="window.history.back()">PREV</button>
     </body>
     </html>

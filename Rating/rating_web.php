@@ -31,7 +31,7 @@ if($row != 0)
     }
 }
 else{
-    $sql2="INSERT INTO Rating (web_id,user_id,rating,review) value ('$web_id','$user_id','$rating','$review')";
+    $sql2="INSERT INTO Rating (web_id,user_id,rating,review) VALUES ($web_id,$user_id,$rating,'$review')";
     $result2=mysqli_query($conn,$sql2);
     if(!$result2)
     {

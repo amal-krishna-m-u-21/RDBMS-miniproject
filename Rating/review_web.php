@@ -33,6 +33,7 @@ $name=$_POST['user'];
 </style>
 </head>
 <body>
+<button class="button" name="leaderboard" id="leaderboard" onclick="window.location.href='../Dashboard/dashboard.php#Leaderboard'">Go Back</button>
     <section ="previous"> 
     <div class="card"> 
     <header> <section ="heading"> 

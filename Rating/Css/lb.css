@@ -104,6 +104,7 @@ h4{
 }
 
 .button {
+
   width: 200px;
   padding: 8px 15px ;
   margin-bottom:10px;
@@ -121,6 +122,36 @@ h4{
 .button:hover {background-color: #00ff0071}
 
 .button:active {
+  background-color: #00d2ee;
+  box-shadow: 0 5px #2E424D;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+.btn {
+
+  width: 100px;
+  padding: 8px 15px ;
+  margin-bottom:5px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background-color: #3c3535c7;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px #2E424D;
+}
+
+.btn:hover {background-color: #00ff0071}
+
+.btn:active {
   background-color: #00d2ee;
   box-shadow: 0 5px #2E424D;
   transform: translateY(4px);

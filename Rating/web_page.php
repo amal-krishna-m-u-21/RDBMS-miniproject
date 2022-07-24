@@ -75,5 +75,6 @@ else{
 
 ?>
 </div>
+<button class="btn"name="prev" id="prev" onclick="window.history.back()">PREV</button>
 </body>
 </html>

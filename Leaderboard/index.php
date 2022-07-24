@@ -23,15 +23,15 @@ $interest_id= $_POST['interest'];
 
 
 ?> 
-
+        <button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>
 <div class="card">   
-<?php
+        <?php
 include('app_leaderboard.php');
 
 ?></div>
 
 <div class="card"> 
-<?php
+        <?php
 include('web_leaderboard.php');
 
 
