@@ -1,6 +1,6 @@
 <html>
     <head>
-
+    <link rel="stylesheet" href="./Css/lb.css">
     </head>
     <body><?php
 
@@ -32,12 +32,6 @@ else{
 <h4>Rating:<?= $app['leaderboard_rating']; ?></h4>
 
 <h3>For More details visit the official site</h3><a href="<?= $url; ?>" target="_blank">Click here</a>
-
-    </section>
-<br>
-
-<section ="review_rating">
-
 
 <form action="review_app.php" method="post">
     <input type="hidden" name="id" value="<?= $app['app_id']; ?>">
