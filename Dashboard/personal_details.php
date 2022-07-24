@@ -27,9 +27,9 @@ echo mysqli_error($conn);
     <br><br>
     <label>User E-mail:</label><?= $details['email']; ?>
     <br><br>
-    <label>User's DOB:</label><?= $details['dob']; ?>
+    <label>User's DOB:</label><?= $details["dob"]; ?>
 
-    <?= $count; ?>
+    
 </header>
 
         <?php
