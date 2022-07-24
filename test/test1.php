@@ -62,7 +62,7 @@ for ($j = 1; $j < $i; $j++)
 }//closing for loop of j
 
 
-
+$app_id=$_POST['interest'];
 $sql_order = "SELECT url,leaderboard_rating,app_name FROM App ORDER BY leaderboard_rating DESC"; //First sorting the App table according to avg app rating and fetching that data
 $sql_sorted_list = mysqli_query($conn, $sql_order);//execution of query
 if (!$sql_sorted_list) 

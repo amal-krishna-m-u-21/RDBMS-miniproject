@@ -100,9 +100,11 @@ else{
 
 <?php 
 
-echo"select interest And category";
+include('leaderboard.php');
+
 
 ?>
+
 
 </section>
 

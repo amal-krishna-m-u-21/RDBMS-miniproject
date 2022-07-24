@@ -34,6 +34,8 @@ section{
    
 }
 
+
+
 .btn{
     font-size: 2rem;
     padding:.7rem 4rem;
@@ -68,6 +70,7 @@ header{
     padding:1rem;
     border-radius: 1rem;
 }
+header.Leaderboard.submit{ margin: 1 rem;}
 
 header .user{
     padding-top: 2rem;

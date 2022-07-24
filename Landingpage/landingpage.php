@@ -1,6 +1,9 @@
 <?php 
 include('config.php');
 session_start();
+include('user_details.php');
+include('interest_table.php');
+include('user_interest_table.php');
 include('app_table.php');
 include('web_table.php');
 include('rating_table.php');
