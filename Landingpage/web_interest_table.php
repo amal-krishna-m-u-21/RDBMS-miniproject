@@ -35,7 +35,7 @@ if($exists == FALSE)
         }
        else
        {
-          echo "Error creating table: " . mysqli_error($conn);
+          $flag="error";
        }
  }
  ?>
