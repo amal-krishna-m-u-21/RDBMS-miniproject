@@ -1,4 +1,8 @@
-<html><?php
+<html>
+    <head>
+
+    </head>
+    <body><?php
 
 include('config.php');
 include('session.php');
@@ -29,6 +33,23 @@ else{
 
 <h3>For More details visit the official site</h3><a href="<?= $url; ?>" target="_blank">Click here</a>
 
+    </section>
+<br>
+
+<section ="review_rating">
+
+
+<form action="review_app.php" method="post">
+    <input type="hidden" name="id" value="<?= $app['app_id']; ?>">
+    <input type="hidden" name="type" value="1">
+    <input type="hidden" name="user" value="<?= $ls; ?>">
+    <input type="hidden" name="appname" value="<?= $app['app_name'];?>" >
+    <input type="submit" value="Review and Ratings">
+</form>
+</section>
+
+
+
 
 
 
@@ -44,4 +65,5 @@ else{
 
 ?>
 
-</html>
+    </body>
+    </html>

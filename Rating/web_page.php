@@ -18,6 +18,7 @@ echo"error";
 else{
     $web=mysqli_fetch_assoc($result);
     ?>
+    <section ="web_details"> 
     <h1><i><?= $name; ?></i></h1>
     <h5>Interest:</h5>
 
@@ -28,7 +29,21 @@ else{
 
 <h3>For More details visit the official site</h3><a href="<?= $url; ?>" target="_blank">Click here</a>
 
+</section>
+<br><br>
 
+
+<section ="review_rating">
+
+
+<form action="review_web.php" method="post">
+    <input type="hidden" name="id" value="<?= $web['web_id']; ?>">
+    <input type="hidden" name="type" value="1">
+    <input type="hidden" name="user" value="<?= $ls; ?>">
+    <input type="hidden" name="webname" value="<?= $web['web_name'];?>" >
+    <input type="submit" value="Review and Ratings">
+</form>
+</section>
 
 
 
