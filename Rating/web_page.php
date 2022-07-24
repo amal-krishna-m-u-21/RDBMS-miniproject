@@ -32,6 +32,8 @@ echo"error";
 }
 else{
     $web=mysqli_fetch_assoc($result);
+    $_SESSION['web_page_id']=$web['web_id'];
+    
     ?>
 
     <div class="card"> 
@@ -49,7 +51,6 @@ else{
 <h3>For More details visit the official site</h3><a href="<?= $url; ?>" target="_blank"><div class="button">  Official Page</div></a>
 
     <form action="review_web.php" method="post">
-        <input type="hidden" name="id" value="<?= $web['web_id']; ?>">
         <input type="hidden" name="type" value="1">
         <input type="hidden" name="user" value="<?= $ls; ?>">
         <input type="hidden" name="webname" value="<?= $web['web_name'];?>" >

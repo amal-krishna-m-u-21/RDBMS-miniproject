@@ -15,16 +15,16 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   align-content: center;
   overflow-x:hidden;
   overflow-y: hidden;
-  padding: 5px;
+  padding: 25px;
 }
 section{
-  padding: 2.2em;
+  padding: 2em;
  
-margin-left: 20%;
+margin-left: 20px;
   margin-top: 0px;
  
 }
@@ -47,6 +47,16 @@ header.p{
   padding:1rem;
   border-radius: 0.2rem;
 }
+h4{
+  width: 200px;
+
+  background:rgba(82, 56, 231, 0.738);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+  backdrop-filter: blur(1rem);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2.2rem;
+}
 
 .card {
   box-shadow:  2px 2px 4px hwb(188 0% 3%);
@@ -56,8 +66,10 @@ header.p{
   border-radius: 4px;
   overflow: hidden;
   padding-right: 1px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  align-items: center;
 
 }
 
@@ -85,6 +97,10 @@ header.p{
   color: #3A7B99;
   background-color: #fff;
   font-size: 20px;
+}
+.group{
+  margin: 20px;
+
 }
 
 .button {
