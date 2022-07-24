@@ -34,12 +34,16 @@
                 foreach ($result as $lb) {     ?>
 
             <section = "webpage">
+                <header>
+
                 <form action="../Rating/web_page.php" method="post">
                     <h1><?= $lb['web_name']; ?></h1>
+                    <h4>Rating:<?= $lb['leaderboard_rating']; ?></h4>
                     <input type="hidden" name="url" value="<?= $lb['url']; ?>">
                     <input type="hidden" name="name" value="<?= $lb['web_name']; ?>">
                     <input type="hidden" name="interest" value="<?= $interest_id; ?>">
-                    <input type="submit" value="View More">
+                    <input class="button" type="submit" value="View More">
+                </header>
                 </form>
             
 
