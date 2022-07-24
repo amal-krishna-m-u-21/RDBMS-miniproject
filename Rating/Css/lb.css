@@ -30,7 +30,7 @@ margin-left: 20%;
 }
 
 header{
-  width:25px;
+  width: 250px;
   background:rgb(74, 207, 255);
   box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
   backdrop-filter: blur(1rem);
@@ -38,16 +38,26 @@ header{
   padding:1rem;
   border-radius: 0.4rem;
 }
+header.p{
+  width: 200px;
+  background:rgb(74, 207, 255);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+  backdrop-filter: blur(1rem);
+  text-align: center;
+  padding:1rem;
+  border-radius: 0.2rem;
+}
 
 .card {
   box-shadow:  2px 2px 4px hwb(188 0% 3%);
   color: #2d010c;
   width: 400px;
-  height: 500px;
+  height: 600px;
   border-radius: 4px;
   overflow: hidden;
-  padding-right: 10px;
+  padding-right: 1px;
   margin-right: 100px;
+  margin-left: 100px;
 
 }
 
@@ -78,13 +88,15 @@ header{
 }
 
 .button {
-  padding: 8px 15px;
+  width: 200px;
+  padding: 8px 15px ;
+  margin-bottom:10px;
   font-size: 15px;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: #ffffff;
-  background-color: #fb54009e;
+  background-color: #3c3535c7;
   border: none;
   border-radius: 10px;
   box-shadow: 0 2px #2E424D;
