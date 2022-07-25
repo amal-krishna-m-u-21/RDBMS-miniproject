@@ -111,7 +111,7 @@ slider.oninput = function() {
     {  
         ?>
 
-<h4> <?=$interest['interest_name']; ?> </h4> <input type="checkbox" name= "$interestlist[]" value="<?= $interest['interest_id'];?>"> 
+<h4> <?=$interest['interest_name']; ?> </h4> <input type="checkbox"  name = "interestlist[]" value="<?= $interest['interest_id'];?>"> 
     
     
     <?php 
