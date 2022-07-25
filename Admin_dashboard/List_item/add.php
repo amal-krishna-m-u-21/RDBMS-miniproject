@@ -1,14 +1,5 @@
 <?php
-include('config.php');
-include('session.php');
-$user_id=$_SESSION['login_session'];
-$type=$_POST['type'];//1=mobile,2=web
-$item_name=$_POST['item_name'];
-$item_url=$_POST['item_url'];
-$rating=$_POST['rating'];
-$review=$_POST['review'];
-$description=$_POST['description'];
-$interest=$_POST['interest'];
+
 
 
 
@@ -18,6 +9,12 @@ if($type==1){
     $row=mysqli_num_rows($result);
     if($row >=1){
         $falg="app is already listed";
+    }
+    else{
+
+
+
+        $insert="INSERT INTO App (app_name,url,description,user_id,leaderboard_rating) VALUES('$item_name','$item_url','$description',$user_id,'$rating')";
     }
 
 }

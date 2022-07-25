@@ -63,7 +63,7 @@ echo mysqli_error($conn);
     <P>List new app/websites here </P>
     <br>
 
-    <form action="../Admin_dashboard/List_item/add.php" method="post">
+    <form action="../Admin_dashboard/List_item/wait.php" method="post">
     <label>Select type:</label><br>
     <select name="type" id="type">
         <option value="select">slect</option>
@@ -101,7 +101,6 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 </script>
-<select name="interest" id="interest">
     <?php 
     $in="SELECT * From Interest WHERE 1";
     $a=mysqli_query($conn,$in);
@@ -112,7 +111,7 @@ slider.oninput = function() {
     {  
         ?>
 
-    <option value="<?= $interest['interest_id'];?>"> <?=$interest['interest_name']; ?> </option> 
+<h4> <?=$interest['interest_name']; ?> </h4> <input type="checkbox" name= "$interestlist[]" value="<?= $interest['interest_id'];?>"> 
     
     
     <?php 
