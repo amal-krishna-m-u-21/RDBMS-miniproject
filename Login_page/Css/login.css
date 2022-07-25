@@ -181,6 +181,9 @@ input[type="date"]{
   
 }
 .button {
+  margin-bottom: 100px;
+  margin-top: 10px;
+  margin-right: 10px;
   padding: 15px 30px;
   font-size: 15px;
   text-align: center;
