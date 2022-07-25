@@ -35,7 +35,8 @@
         }
         else
         {
-           header("location:wrongpswd.php");
+          echo"wrong password";
+          echo '<br> <br> <button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>';
          exit();
         }
 
@@ -43,7 +44,15 @@
 
      else
         {
-           header("location:wrongpswd.php");
+           echo"user dosen't exit";
+           echo '<br> <br> <button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>';
         }
-   }}
+   }
+else{echo"user dosen't exit";
+   echo '<br><br><button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>';}
+}
+else{
+   echo"invalid method";
+   echo '<br><br><button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>';
+}
 ?>

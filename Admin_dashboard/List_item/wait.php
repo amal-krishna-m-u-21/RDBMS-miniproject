@@ -9,6 +9,7 @@ $rating=$_POST['rating'];
 $review=$_POST['review'];
 $description=$_POST['description'];
 $interest=$_POST['interestlist'];
+$flag=10;
 
 
 if($type==1){

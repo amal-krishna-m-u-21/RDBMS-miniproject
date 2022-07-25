@@ -2,15 +2,24 @@
 <html>
    
    <head>
+
+<link rel="stylesheet" href="./Css/fp.css">
+   <style>
+      
+      .divScroll{
+          overflow:scroll;
+          max-height:4000px;
+          max-width:1000px;;
+ 
+      }
+      
+ </style>
+
       <title>Admin Dashboard </title>
    </head>
    
-   <body> 
-      <header>
-         <h1>Welcome Boss<br>
-        
-         </h1> 
-      </hearder>
+   <body>
+     
       <?php 
          //session_start();
          include('session.php');
@@ -19,7 +28,15 @@
          $sql="SELECT * FROM User_details WHERE user_id = $ls";
          $result = mysqli_query($conn,$sql);
          $row = mysqli_fetch_assoc($result);
+         ?>
+         <section =" starting"><h1>Admin</h1></section><div class="divSroll">  
+         <section ="add interest" > <?php
          include('add_interest.php');
+
+
+         ?> 
+            </section>
+         <?php
          include('add_app.php');
          include('add_web.php');
          ?> 
@@ -28,6 +45,10 @@
 
           
       <h2><a href = "../Login_page/logout.php">Sign Out</a></h2>
+  
+  
+  
+      </div>
    </body>
     
 </html>
