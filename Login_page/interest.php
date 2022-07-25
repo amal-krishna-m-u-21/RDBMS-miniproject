@@ -42,7 +42,6 @@ height:480px;
   <title>Interest</title>
 </head>
 <body>
-  
 
 <button class="button" name="prev" id="prev" onclick="window.history.back()">PREV</button>
 <div class="card">   
