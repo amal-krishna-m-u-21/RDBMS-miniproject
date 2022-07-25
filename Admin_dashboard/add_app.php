@@ -57,6 +57,16 @@ foreach($result as $record){if($record['item_type']==1){ $type="Mobile-app";}els
  </td>
  <td>
    
+    <input type="radio" name="type" value="Mobile-app"><i>M</i>
+ 
+ </td>
+ <td>
+   
+    <input type="radio" name="type" value="Web-app"><i>W</i>
+ 
+ </td>
+ <td>
+   
     <input type="submit" value="ok">
 </form>   
  

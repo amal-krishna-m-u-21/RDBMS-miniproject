@@ -38,7 +38,7 @@
             </section>
          <?php
          include('add_app.php');
-         include('add_web.php');
+       
          ?> 
   
   

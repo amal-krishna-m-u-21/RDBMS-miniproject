@@ -9,6 +9,8 @@ include('web_table.php');
 include('app_interest_table.php');
 include('web_interest_table.php');
 include('rating_table.php');
+include('waiting_list_table.php');
+
 
 
 ?>
