@@ -69,6 +69,8 @@ header{
     text-align: center;
     padding:1rem;
     border-radius: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 header.Leaderboard.submit{ margin: 1 rem;}
 
@@ -119,6 +121,50 @@ header .navbar ul li a:hover{
     color:#555;
     transition: none;
 }
+p{
+    padding-top: 5px;
+    padding-top: 5px;
+    font-style: italic;
+    font-size: medium;
+    font-weight: normal;
+}
+h3{
+    padding-top: 1px;
+    padding-top: 1px;
+    font-style:oblique;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+h5{
+    padding-top: 1px;
+    padding-top: 1px;
+    font-style:italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+
+label{
+    font-family: 'Impact, Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    font-style: italic;
+    font-weight:bold;
+    color: #000000;
+    text-align: left;
+    
+}
+h1{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 18px;
+    font-style: italic;
+    font-weight:bolder;
+    color: #27028c;
+    text-align: left;
+    
+}
 
 .container{
     height:58rem;
@@ -133,7 +179,7 @@ header .navbar ul li a:hover{
 
 
 .button {
-    padding:1rem;
+    padding:.5rem;
     margin-left: 1rem;
     font-size: 1.5rem;
     text-align: center;
@@ -142,7 +188,7 @@ header .navbar ul li a:hover{
     color: #ffffff;
     background-color: #006781;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
   }
   
   .button:hover {background-color: #00ccff}
@@ -151,4 +197,20 @@ header .navbar ul li a:hover{
     background-color: #00b89f;
     box-shadow: 0 3rem #2E424D;
     transform: translateY(4px);
+  }
+form{
+    align-items:center;
+    text-align: left;
+}
+textarea
+{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: rgba(0, 255, 255, 0.338);
+}
+input[type=text] {
+    width: 100%;
+    margin: 8px 0;
+  border-radius: 15px;
+    box-sizing: border-box;
   }
