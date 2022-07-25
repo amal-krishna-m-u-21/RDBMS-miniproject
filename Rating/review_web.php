@@ -41,9 +41,7 @@ $name=$_POST['user'];
    </section>
    </header>
     <div class="divScroll">
-        <br>
-        <br>
-
+   <br><br>
     <?php 
 $sql="SELECT * FROM Rating WHERE web_id =$id ";
 $result=mysqli_query($conn,$sql);

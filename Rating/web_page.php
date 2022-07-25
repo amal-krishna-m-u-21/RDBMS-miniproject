@@ -75,6 +75,6 @@ else{
 
 ?>
 </div>
-<button class="btn"name="prev" id="prev" onclick="window.history.back()">PREV</button>
+<button class="btn" name="leaderboard" id="leaderboard" onclick="window.location.href='../Dashboard/dashboard.php#Leaderboard'">Home</button>
 </body>
 </html>

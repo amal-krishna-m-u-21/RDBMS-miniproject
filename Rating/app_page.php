@@ -33,6 +33,7 @@ echo"error";
 }
 else{
     $app=mysqli_fetch_assoc($result);
+    $_SESSION['app_page_id']=$app['app_id'];
     ?>
     <div class="card"> 
         
@@ -78,6 +79,6 @@ else{
 ?>
     </div>
     
-    <button class="btn"name="prev" id="prev" onclick="window.history.back()">PREV</button>
+    <button class="btn" name="leaderboard" id="leaderboard" onclick="window.location.href='../Dashboard/dashboard.php#Leaderboard'">Home</button>
     </body>
     </html>

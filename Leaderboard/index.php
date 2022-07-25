@@ -23,7 +23,7 @@ $interest_id= $_POST['interest'];
 
 
 ?> 
-        <button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>
+       <button class="button" name="leaderboard" id="leaderboard" onclick="window.location.href='../Dashboard/dashboard.php#Leaderboard'">Go Back</button>
 <div class="card">   
         <?php
 include('app_leaderboard.php');
