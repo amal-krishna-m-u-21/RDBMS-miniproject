@@ -3,7 +3,7 @@
 
 
 
-if($type==1){
+if($type==1){ //
     $sql="SELECT * FROM App WHERE url=$item_url ";
     $result=mysqli_query($conn,$sql);
     $row=mysqli_num_rows($result);

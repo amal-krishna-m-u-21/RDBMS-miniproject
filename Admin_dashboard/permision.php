@@ -9,7 +9,7 @@ echo$status."status <br>";
 
 
 $sql="SELECT * FROM Wating_list WHERE id= '$waiting_id'";
-echo $sql;echo"<br>";
+
 $result=mysqli_query($conn,$sql);
 
 //$query=$conn ->query($sql);
@@ -30,24 +30,19 @@ $item_rating=$row['item_rating'];
 $time=$row['time'];
 //}}
 //else{print"error not fetching";}
-echo$user_id;echo"-userid";
-echo$interest;echo"-interestid";
-echo$item;echo"-item name";
-echo$item_url;echo"-url";
+
 echo$item_description;echo"-descr";
-echo$item_review;echo"-review";
-echo$item_rating;echo"-rating";
-echo$time;echo"-time";
+
 
 if($type=="Mobile-app")
 {
-    echo"type mobile if";
+
 $sql1="SELECT interest_id FROM Wating_list  WHERE item_name='$item'";      
-echo"<br>".$sql1;
+
 $result1=mysqli_query($conn,$sql1);
 $row1=mysqli_fetch_array($result1);
 foreach($row1 as $interest_id)
-{echo"foreach";
+{
 if ($status== "grant")
 {//insert into app
     echo"this";
