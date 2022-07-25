@@ -167,7 +167,7 @@ h1{
 }
 
 .container{
-    height:58rem;
+    height: 60rem;
     width:80rem;
     background:rgba(255,255,255,.2);
     box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
@@ -206,7 +206,8 @@ textarea
 {
     border-radius: 5px;
     margin-bottom: 5px;
-    color: rgba(0, 255, 255, 0.338);
+    color: rgba(0, 0, 0, 0.338);
+    background-color: rgba(8, 190, 231, 0.216);
 }
 input[type=text] {
     width: 100%;
@@ -214,3 +215,14 @@ input[type=text] {
   border-radius: 15px;
     box-sizing: border-box;
   }
+  .divScroll::-webkit-scrollbar {
+    display: none;
+  }
+    .divScroll{
+        overflow:scroll;
+        height:400px;
+        width: 570px;
+        -ms-overflow-style: none; 
+ scrollbar-width: none;  
+
+    }

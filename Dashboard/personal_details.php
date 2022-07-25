@@ -19,7 +19,7 @@
 </head>
 <body>
     <header><h1>User Details</h1></header>
-    <br><br><br>
+
     
     
 <?php
@@ -33,33 +33,38 @@ if($result){
 echo mysqli_error($conn);
 }
         ?>
+       
 <header>
-    <label>User Name:</label> 
-</header>
+    <label>User Name:</label> <br>
+
     <h5><?= $details['user_name'];?>
-</h5>
-  <header> 
-    <label>User E-mail:</label>
-    </header> 
-    <h5><?= $details['email']; ?></h5>
+</h5><br><br>
 
-<header>   
+    <label>User E-mail:</label><br>
+ 
+    <h5><?= $details['email']; ?></h5><br><br>
+
+
      <label>User's DOB:</label><br>
-</header>
-    <h5><?= $details["dob"]; ?></h5>
+     <h5><?= $details["dob"]; ?></h5><br><br>
+    </header>
 
-    
+
 
         <?php
  
 
 
         ?>
-        <br><br><br>
         <div class="divScroll"> 
-<header><h1>List item</h1></header><br>
-<header> <label>Select type:</label><br>
-<form action="add.php" method="post">
+       
+<header><h1>List item</h1></header>
+<header> 
+    <P>List new app/websites here </P>
+    <br>
+
+    <form action="add.php" method="post">
+    <label>Select type:</label><br>
     <select name="type" id="type">
         <option value="select">slect</option>
         <option value="1">Mobile APP</option>
@@ -92,37 +97,11 @@ slider.oninput = function() {
 </script>
 <input class="button" type="submit" value="Done">
 </form>
-<br>
-<br>
-<br>
-<br>
-
-
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>        
 
 </header>
-
 </div>
+
 
 
 
