@@ -63,17 +63,23 @@ echo mysqli_error($conn);
     <P>List new app/websites here </P>
     <br>
 
-    <form action="add.php" method="post">
+    <form action="../Admin_dashboard/List_item/add.php" method="post">
     <label>Select type:</label><br>
     <select name="type" id="type">
         <option value="select">slect</option>
         <option value="1">Mobile APP</option>
         <option value="2">Web Page</option>
     </select><br><br>
-    <label>Enter URL</label><br>
-    <input type="url" name="item" id="item">
+    <input type="text" name="item_name" id="item_name" placeholder="Enter Name of the App/web-Page">
+  <br>
+    <input type="url" name="item_url" id="item" placeholder="Enter the URL">
 
-    <h3>Review and Rating</h3><br>
+
+    <br><br><br>
+    <textarea rows="5" cols="20" name="description"  placeholder="Provide description here" required>
+</textarea>
+
+<br><br><br>
     <textarea rows="5" cols="20" name="review"  placeholder="Write review here" required>
 </textarea>
 

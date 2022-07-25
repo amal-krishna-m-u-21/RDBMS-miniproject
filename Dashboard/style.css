@@ -206,8 +206,8 @@ textarea
 {
     border-radius: 5px;
     margin-bottom: 5px;
-    color: rgba(0, 0, 0, 0.338);
-    background-color: rgba(8, 190, 231, 0.216);
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 208, 255, 0.145);
 }
 input[type=text] {
     width: 100%;
