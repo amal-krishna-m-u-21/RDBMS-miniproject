@@ -10,7 +10,7 @@ if($result == FALSE)  {
 
 
 $wait="CREATE TABLE Wating_list (id INT(30) UNSIGNED AUTO_INCREMENT  PRIMARY KEY ,
- user_id INT(30) NOT NULL ,
+ user_id INT(30) NOT NULL ,interest_id INT(30) NOT NULL,
  item_name VARCHAR(50) NOT NULL , item_type INT(2) NULL  ,
  item_url VARCHAR(2048) NOT NULL ,item_description VARCHAR(2048) NOT NULL , 
  item_review VARCHAR(2048) NOT NULL ,item_rating FLOAT(10) NOT NULL ,

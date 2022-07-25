@@ -101,6 +101,24 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 </script>
+<select name="interest" id="interest">
+    <?php 
+    $in="SELECT * From Interest WHERE 1";
+    $a=mysqli_query($conn,$in);
+    $n=mysqli_num_rows($a);
+
+    foreach($a as $interest)
+
+    {  
+        ?>
+
+    <option value="<?= $interest['interest_id'];?>"> <?=$interest['interest_name']; ?> </option> 
+    
+    
+    <?php 
+ }
+?>
+</select>
 <input class="button" type="submit" value="Done">
 </form>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>        
