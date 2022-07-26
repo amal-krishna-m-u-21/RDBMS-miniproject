@@ -3,9 +3,7 @@ include('config.php');
 $waiting_id =$_POST['waiting_id'];
 $status =$_POST['status'];
 $type=$_POST['type'];
-echo $waiting_id."waiting id <br>";
-echo$type."type<br>";
-echo$status."status <br>";
+
 
 
 $sql="SELECT * FROM Wating_list WHERE id= '$waiting_id'";
@@ -31,80 +29,95 @@ $time=$row['time'];
 //}}
 //else{print"error not fetching";}
 
-echo$item_description;echo"-descr";
+
 
 
 if($type=="Mobile-app")
 {
 
-$sql1="SELECT interest_id FROM Wating_list  WHERE item_name='$item'";      
+$sql1="SELECT Wating_list.interest_id FROM Wating_list  WHERE item_name='$item'";    
+ 
 
 $result1=mysqli_query($conn,$sql1);
-$row1=mysqli_fetch_array($result1);
-foreach($row1 as $interest_id)
-{
+$row1=mysqli_fetch_assoc($result1);
 if ($status== "grant")
 {//insert into app
-    echo"this";
-    echo$interest_id['interest_id']."interest id of items <br>";
-$sql2="INSERT INTO App (app_name,url,user_id,leaderboard_rating) VALUES ('$item','$item_url',$user_id,$item_rating)";
-$result2=mysqli_query($conn,$sql2);
-
-if(!$result)
-{
-
-echo"error inserting into app".mysqli_error($conn);
-
-
-}
-
-else
-{
-$sql="SELECT app_id FROM App WHERE url='$item_url'";
-$result=mysqli_query($conn,$sql);
-$row=mysqli_fetch_assoc($result);
-$app_id=$row['app_id'];
-//insert into app interest
-$i=$interest_id['interest_id'];
-$sql3="INSERT INTO App_interest (interest_id,app_id) VALUES ($i,$app_id) ";
-$result3=mysqli_query($conn,$sql3);
-
-if(!$result3)
-{
-
-echo"error inserting app interest".mysqli_error($conn);
-
-
-}
-
-}
-
-
-}
-
-
-
-
-}
-
-
-
+    
+    
+    $sql2="INSERT INTO App (app_name,url,user_id,leaderboard_rating) VALUES ('$item','$item_url',$user_id,$item_rating)";
+    $result2=mysqli_query($conn,$sql2);
+    
+    if(!$result2)
+    {
+        
+        echo"error inserting into app".mysqli_error($conn);
+        
+        
+    }
+    
+    else
+    {
+       // echo"<br>".$key."key".$interest['interest_id']."interest id"."<br>";
+        $sql="SELECT app_id FROM App WHERE url='$item_url'";
+        $result=mysqli_query($conn,$sql);
+        $row=mysqli_fetch_assoc($result);
+        $app_id=$row['app_id'];
+        //insert into app interest
+        
+        
+        
+        foreach($result1 as $key=>$interest)
+        { 
+            
+            
+            
+            
+            $sql3="INSERT INTO App_interest (interest_id,app_id) VALUES ($i,$app_id) ";
+            $result3=mysqli_query($conn,$sql3);
+            echo$sql3."<br>";
+            
+        }
+            if(!$result3)
+            {
+                
+                echo"error inserting app interest".mysqli_error($conn);
+                
+                
+            }
+            
+            
+            
+        
+        
+        
+        
+        }
+        
+    }
+    
+    
+    
 }//end of app type
 
 
 if($type=="Web-app")
 {
-$sql1="SELECT interest_id FROM wating_list WHERE item_name=$item";      
-$result1=mysqli_query($conn,$sql1);
-$row1=mysqli_fetch_assoc($result1);
-foreach($row1 as $interest_id)
-{
+$sql1="SELECT Wating_list.interest_id FROM Wating_list WHERE item_name='$item'"; 
+echo $sql1;      
+
+
+$resultweb=mysqli_query($conn,$sql1);
+if(!$resultweb){
+    echo"<br> error".mysqli_error($conn)."<br>";
+}
+$row1=mysqli_fetch_assoc($resultweb);
+
 if ($status=="grant")
 {//insert into app
 $sql2="INSERT INTO Web (web_name,url,user_id,leaderboard_rating) VALUES ('$item','$item_url',$user_id,$item_rating)";
 $result2=mysqli_query($conn,$sql2);
 
-if(!$result)
+if(!$result2)
 {
 
 echo"error inserting into web".mysqli_error($conn);
@@ -115,13 +128,21 @@ echo"error inserting into web".mysqli_error($conn);
 else
 {
 $sql="SELECT web_id FROM Web WHERE url='$item_url'";
+//echo $sql;
 $result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_assoc($result);
-$app_id=$row['web_id'];
+$web_id=$row['web_id'];
+//echo"<br>".$web_id;
 //insert into web interest
-$sql3="INSERT INTO Web_interest (interest_id,web_id) VALUES ($interest_id,$app_id) ";
-$result3=mysqli_query($conn,$sql3);
 
+foreach ($resultweb as $interest)
+{//echo"hai";
+    $i=$interest['interest_id'];
+   // echo$i;
+$sql3="INSERT INTO Web_interest (interest_id,web_id) VALUES ($i,$web_id) ";
+$result3=mysqli_query($conn,$sql3);
+//echo $sql3;
+}
 if(!$result3)
 {
 
@@ -140,9 +161,7 @@ echo"error inserting web interest".mysqli_error($conn);
 
 }
 
-
-
-}//end of web type
+//end of web type
 
 
 
@@ -202,7 +221,7 @@ if($type=="Web-app")
     if ($status=="grant")
     {
 
-if($app_id!=NULL)
+if($web_id!=NULL)
 {
 
     $sql2="INSERT INTO Rating (web_id,user_id,rating,review) VALUES ($web_id,$user_id,$item_rating,'$item_review')";
@@ -238,7 +257,7 @@ echo"error deletion".mysqli_error($conn);
 }
 
 
-
+header('location:./sudo.php');
 
 
 

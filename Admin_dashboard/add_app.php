@@ -45,7 +45,7 @@ foreach($result as $record){if($record['item_type']==1){ $type="Mobile-app";}els
 <td><?= $record['item_review']; ?> </td>
 <td><?= $record['item_rating']; ?> </td>
 <td><?= $record['time']; ?> </td>
-<td><form action="permision.php" method="post"> 
+<td><form action="./permision.php" method="post"> 
     <input type="hidden" name="waiting_id" value=" <?= $record['id']; ?>">
     <input type="radio" name="status" value="grant"><i>Y</i>
  
