@@ -3,7 +3,8 @@
    session_start();
   
 
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
+   if($_SERVER["REQUEST_METHOD"] == "POST")
+    {
       // username and password sent from form 
       
       $myemail = mysqli_real_escape_string($conn,$_POST['email']);
@@ -40,19 +41,31 @@
          exit();
         }
 
-     }
+       }
 
-     else
+        else
         {
-           echo"user dosen't exit";
-           echo '<br> <br> <button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>';
+       
+         echo '<script type="text/JavaScript">
+            if(!alert("Invalid User details")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+            </script>';
+     
+         
         }
-   }
-else{echo"user dosen't exit";
-   echo '<br><br><button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>';}
-}
-else{
-   echo"invalid method";
-   echo '<br><br><button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>';
+       }
+             else{
+   
+   
+            echo '<script type="text/JavaScript">
+             if(!alert("Invalid User details")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+           </script>';
+
+           }
+      } 
+     else{
+   
+      echo '<script type="text/JavaScript">
+      if(!alert("Invalid Method")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+      </script>';
 }
 ?>
