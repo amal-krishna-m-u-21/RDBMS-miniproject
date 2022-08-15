@@ -57,8 +57,7 @@ $result = mysqli_query($conn, $sql);
         <input class="button" type="submit" value="View Leaderboard">
     </form>
     </div>
- 
-
+ <br><br><br><br>
     <div class="divScroll"> 
        
        <h1>List item</h1>

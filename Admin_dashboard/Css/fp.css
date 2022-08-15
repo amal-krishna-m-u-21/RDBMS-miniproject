@@ -147,10 +147,9 @@ p{
 
 
 h1{
-  font-family: 'Prompt', sans-serif;
-  font-size: 50px;
-  color:rgb(0, 0, 0);
-  font-weight: 900;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 58px;
+  color: rgb(0, 0, 0);
 
   background:linear-gradient(to Right, #ffd500ce);
   text-align: center;
@@ -161,9 +160,18 @@ h1{
 
 
 h2{
+  
+
+
   font-family: 'Prompt', sans-serif;
-  font-size: 18px;
-  color:rgb(61, 5, 139);
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+  font-weight: 900;
+
+ color:rgb(0, 0, 0);
+
+
+
 
   background:linear-gradient(to Right, #ffd500ce);
   text-align: center;
