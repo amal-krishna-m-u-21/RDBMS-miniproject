@@ -12,10 +12,20 @@
 
      }
 </style>
-<title>Document</title>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,500&display=swap" rel="stylesheet"> 
+
+
+<title>Home</title>
 </head>
 <body>
-    <header><h1> Interest list</h1> </header><br><br>
+   <h1> Interest    List</h1> 
     <div class="divScroll">
 <?php 
 
@@ -29,15 +39,13 @@ if($result){
 
 foreach($result as $interest)
 {
-    ?>
-     <br><br>
-     
-     <header>
+    ?><div class="interest">  
+   
          <?= $interest['interest_name']; ?> 
-        </header>
-        <br><br>
+      
+      
 
-        
+         </div>        
         
         <?php
 
@@ -50,9 +58,13 @@ else
 }
 ?>
 </div>
-<br><br>
-<header><a href="../Login_page/interest.php"> Click here </a> to ADD Interest </header>
 
+<br><br><br><br>
+
+<label for="">
+<a href="../Login_page/interest.php"> Click here </a> to ADD Interest 
+</label>
+    
     <?php
 
 

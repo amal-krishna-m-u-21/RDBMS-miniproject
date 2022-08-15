@@ -48,12 +48,14 @@ else{
 <header>
 
     <div class="user">
-        <img src="person.svg" hight="15rem" width="15rem" alt="">
+        <img src="person.svg" >
         <div class="name"> <?= $row['user_name']; ?> </div>
+
         <div class="review">
         <button class="button" onclick="window.location='#review_details'">Total review<br><?= $count['count'] ?></button>
         <button class="button"  onclick="window.location='#review_details'">Total rating<br><?= $sum['sum'] ?></button>
     </div>
+
     </div>
 
     <nav class="navbar">
@@ -77,7 +79,7 @@ else{
 
     <section class="home" id="home">
 
-<?php include('home.php'); ?>
+   <?php include('home.php'); ?>
 
     </section>
 
@@ -85,7 +87,7 @@ else{
 
     <section class="personal_details" id="personal_details">
 
-<?php include('personal_details.php'); ?>
+  <?php include('personal_details.php'); ?>
     </section>
 
     <!-- Review details section  -->
@@ -98,15 +100,15 @@ else{
     <!-- Leaderboard section  -->
     <section class="Leaderboard" id="Leaderboard">
 
-<?php 
+  <?php 
 
-include('leaderboard.php');
-
-
-?>
+  include('leaderboard.php');
 
 
-</section>
+  ?>
+
+
+  </section>
 
 
 </div>

@@ -5,29 +5,46 @@
             overflow: scroll;
             height: 10px;
             width: 10px;
-            margin-left: 10px;
+            margin-left: 130px;
 
             ;
 
         }
     </style>
 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,500&display=swap" rel="stylesheet"> 
+
+
+
+
 </head>
 
-<body>
+<body><div class="divScroll"> 
+
+
 <?php //this is for fetching rating details
 
 $query="SELECT App.app_name ,Rating.rating,Rating.review FROM Rating JOIN App ON Rating.app_id=App.app_id WHERE Rating.user_id= $ls ";
 $result=mysqli_query($conn,$query);
 if($result)
-{ ?><h1>Mobile Applications</h1>
-<div class="divScroll">  <?php
+{ ?>
+
+<h1>Mobile Applications</h1>
+     <?php
 foreach($result as $li){
 ?>
-<header><h5><?=$li['app_name']; ?></h5></header>
+<h1><?=$li['app_name']; ?></h1>
+<label>Review:</label>
 <p><?=$li['review']; ?></p>
-<h5><?= $li['rating'] ?></h5>
+<label>Rating:</label>
+<p><?= $li['rating'] ?></p> 
 
+<br><br><br>
 
 
 <?php
@@ -53,9 +70,14 @@ if($result)
  <?php
 foreach($result as $li){
 ?>
-<header><h5><?=$li['web_name']; ?></h5></header>
+<br>
+<
+<h1><?=$li['web_name']; ?></h1>
+<label for="">Review </label>
 <p><?=$li['review']; ?></p>
-<h5><?= $li['rating'] ?></h5>
+<label for="">Rating</label>
+<p><?= $li['rating'] ?></p>
+<br><br>
 
 
 
@@ -67,6 +89,7 @@ else{
 
 ?>
 </div>
+
 
 </body>
 </html>
