@@ -8,12 +8,25 @@
       
       .divScroll{
           overflow:scroll;
-          max-height:4000px;
-          max-width:1000px;;
+          max-height:1200px;
+          max-width:1200px;;
  
       }
       
  </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,500&display=swap" rel="stylesheet"> 
+
 
       <title>Admin Dashboard </title>
    </head>
@@ -29,13 +42,13 @@
          $result = mysqli_query($conn,$sql);
          $row = mysqli_fetch_assoc($result);
          ?>
-         <section =" starting"><h1>Admin</h1></section><div class="divSroll">  
-         <section ="add interest" > <?php
+        <h1>Admin</h1><div class="divSroll">  
+        <?php
          include('add_interest.php');
 
 
          ?> 
-            </section>
+           
          <?php
          include('add_app.php');
        
@@ -44,11 +57,12 @@
   
 
           
-      <h2><a href = "../Login_page/logout.php">Sign Out</a></h2>
+      <button> <a href = "../Login_page/logout.php">Sign Out</a> </button>
   
   
   
       </div>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
    </body>
     
 </html>
