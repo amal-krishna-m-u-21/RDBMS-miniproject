@@ -23,11 +23,12 @@ height:480px;
 <body >
     <div class="background-image"> 
   
-            <div class="card"> 
+            <div class="card"> <div class="group">
             <button class="button" name="forgot" id="forgot" onclick="window.location.href='./forgot_password.php'">Forgot Password</button>
-            <br>  <br>  <br>
+            <br>  <br>  <br> </div> 
+            <div class="group">  
             <button class="button" name="forgot" id="forgot" onclick="window.location.href='./reset_password.php'">Reset Password</button>
-        </div></div>
+        </div></div></div>
 <div class="group"> 
 <button class="button"name="prev" id="prev" onclick="window.history.back()">PREV</button>
 </div>

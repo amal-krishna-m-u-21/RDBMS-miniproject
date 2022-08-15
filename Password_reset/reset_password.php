@@ -35,17 +35,18 @@ height:480px;
         </header>
         <form action="resetpaswd.php" name="forgot_password_form" onsubmit="return validateFormforgot()" method="post">
 
-            <div class="group">
-                <input type="text" name="email" id="email" placeholder="Email"><br>
+            <div class="group"><label for=""></label>
+                <input type="email" name="email" id="email" placeholder="Email"><br>
             </div>
-            <div class="group">
+            <div class="group"><label for=""></label>
                 <input type="password" name="prepswd" id="prepswd" placeholder="Old password"><br>
             </div>
 
             <div class="group">
-                <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /><br>
+                <label for=""></label>            
+            <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /><br>
             </div>
-            <div class="group">
+            <div class="group"><label for=""></label>
 
                 <input type="password" name="password2" id="password2" placeholder="Confirm Password" required><br>
             </div>

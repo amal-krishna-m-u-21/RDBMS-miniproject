@@ -1,5 +1,5 @@
 * {
-  font-family: '微軟正黑體';
+
   transition: 0.1s;
   box-sizing: border-box;
   -webkit-user-select: none;
@@ -83,21 +83,7 @@ body {
   background-color: #3A7B99;
   cursor: pointer;
 }
-.card .loginPage .fab.fa-facebook,
-.card .registerPage .fab.fa-facebook {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  margin-top: 8px;
-  font-size: 24px;
-  width: 100px;
-  height: 40px;
-  border-radius: 16px;
-  color: #fff;
-  background-color: #3A7B99;
-  cursor: pointer;
-}
+
 .card .loginPage .group,
 .card .registerPage .group {
   margin: 8px;
@@ -106,6 +92,12 @@ body {
 .card .loginPage .group label,
 .card .registerPage .group label {
   margin-right: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #000000f4;
+  padding-inline-end: 1px;
 }
 .card .registerPage {
   right: 0;
@@ -137,21 +129,20 @@ body {
   font-size: 20px;
 }
 input[type="date"]{
-  background-color: #008cbb;;
+  background-color:#03e8fd58;
   padding:5px;
-  align-items:center;
+  
   font-family: "Roboto mono",monospace;
-  color:#ffffff;
+  color:#000000;
   font-size: 15px;
   border:none;
   outline:none;
   border-radius:35px;
   margin-bottom: 15px;
   margin-top: 15px;
-  
-  
+margin-left: 20px;
 }
-.date:hover{background-color: #4ac3ff;
+input[type="date"]:hover{background-color: #eaeaea;
   color:#201b1b;
   font-size: 15px;
   border:none;
@@ -159,6 +150,7 @@ input[type="date"]{
   border-radius:25px;
   margin-bottom: 25px;
   margin-top: 25px;
+  
   }
 ::-webkit-calendar-picker-indicator{
   background-color: #ffffff;
@@ -169,6 +161,7 @@ input[type="date"]{
 
 }
 .tiny-text{ 
+  margin-left: 50px;
   font-family: "Roboto mono",monospace;
   color: #008cbb;
   font-size: 12px;
@@ -181,25 +174,97 @@ input[type="date"]{
   
 }
 .button {
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-left: 50px;
   padding: 15px 30px;
   font-size: 15px;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: #FFFFFF;
-  background-color: #A5DEF1;
+  background-color: #03ddfa;
   border: none;
   border-radius: 10px;
   box-shadow: 0 5px #2E424D;
 }
 
-.button:hover {background-color: #00ccff}
+.button:hover {background-color: #ffffff;
+  color: #000000;
+}
 
 .button:active {
   background-color: #00b89f;
   box-shadow: 0 5px #2E424D;
   transform: translateY(4px);
+}
+
+
+
+
+
+input[type="email"]{
+  background-color: #03e8fd58;
+  padding:5px;
+  align-items:center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  color:#000000;
+  font-size: 12px;
+  font-style: italic;
+  border-radius: 45px;
+  margin-left: 27px;  
+  text-align: center;
+font-weight: bolder;
+font-style: italic;
+  
+}
+
+
+input[type="password"]{
+  background-color: #03e8fd58;;
+  padding:5px;
+  align-items:center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  color:#000000;
+  font-size: 12px;
+  font-style: italic;
+  border-radius:45px;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+    
+  
+}
+
+
+input[type="text"]{
+  background-color: #03e8fd58;
+  padding:5px;
+  align-items:center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  color:#000000;
+  font-size: 12px;
+  font-style: italic;
+  border-radius:45px;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+    
+  
+}
+
+
+input[type="checkbox"]{
+ 
+
+  place-items: center;
+  
+}
+
+
+h1
+{
+  margin-left: 50px;
+  color:  #014151;
+  padding:5px;
 }

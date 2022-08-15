@@ -12,17 +12,18 @@
   <form class="loginPage" name="loginPage" action="login.php" onsubmit="return validateFormlog()" method="POST" required> 
     <h1>Log In</h1>
     <div class="group">
-      <label class="far fa-envelope" for="email"></label>
+      <label class="far fa-envelope" for="email"> E-mail </label>
+
       <input type="email" name="email" placeholder="Email"/>
     </div>
     <div class="group">
-      <label class="fas fa-key" for="password"></label>
+      <label class="fas fa-key" for="password">Password</label>
       <input type="password" name="password" id="pswd" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
-      <br><small> show password</small><input type="checkbox" onclick="visiblel()">
+      <br><br><small> <b>show password</b></small><input type="checkbox" onclick="visiblel()">
  
     </div>
    <div class="group">
-      <button class="button" id="login" type="submit">login</button>
+      <button class="button" id="login" type="submit">Sign in </button>
     </div><br>
     <div class="tiny-text"><a href=../Password_reset/forgot.php> Forgot password?</a></div>
   </form>
