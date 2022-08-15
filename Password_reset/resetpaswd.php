@@ -27,9 +27,15 @@ if($count == 1)
 $_SESSION['status_paswd']="password reset successfully";
 if (mysqli_query($conn, $sql)) {
 
-    header('location:http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php');
+  echo '<script type="text/JavaScript">
+  if(!alert("Password reset successfully .Login")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/logout.php";
+  </script>';
+
 exit();
-} 
+}    echo '<script type="text/JavaScript">
+if(!alert("Technical error")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/logout.php";
+</script>';
+
 echo "<br> Error : ". "<br>" . mysqli_error($conn) ;
 
   }

@@ -23,13 +23,18 @@ foreach($il as $interest_item)
 if($result)
 {
     $_SESSION['status_interest'] = "Inserted succesfully";
-    header("location:index.php");
+    echo '<script type="text/JavaScript">
+    if(!alert("Registration Completed !!! ")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+    </script>';
+
 }
 else
 {
     $_SESSION['status_interest'] = "Not Inserted succesfully";
-    header("location:index.php");
-    
+    echo '<script type="text/JavaScript">
+    if(!alert("Interest NOt inserted")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+    </script>';
+
 }
 
 }

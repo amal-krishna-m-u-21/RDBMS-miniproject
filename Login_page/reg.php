@@ -16,7 +16,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   
   $myemail = mysqli_real_escape_string($conn,$_POST['email']); 
   if($myemail=="admin@gamil.com")
-  { header("Location:wrongpswd.php");;
+  {    echo '<script type="text/JavaScript">
+    if(!alert("Reserved E-mail")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+    </script>';
+
   exit();
   }
   else{
@@ -39,13 +42,18 @@ exit();
 
 else
 {
-  echo "<br> Error : ". "<br>" . mysqli_error($conn) ."<br>"."GO back & try Selecting DOb";
+  echo '<script type="text/JavaScript">
+  if(!alert("Insert Dob")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+  </script>';
+
 }
 
 mysqli_close($conn);}
 else
-{
-  header("location:index.php");
+{   echo '<script type="text/JavaScript">
+  if(!alert("Account already exits")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+  </script>';
+
   exit();
 }}}
 ?>

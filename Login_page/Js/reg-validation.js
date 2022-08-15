@@ -21,7 +21,7 @@ function validateForm() {
     }
 
 
-    else{alert ("Welcome!!! \n Please Login !!!");}
+    else{}
   }
   //validation for length and character included in password only for password;
   var myInput = document.getElementById("psw");
@@ -118,6 +118,6 @@ function validateForm() {
       alert("Email must be filled out");
      return false;
     }
-    else{alert ("Welcome!!!");
+    else{;
   }
   }

@@ -3,7 +3,7 @@
     <h1>Create Account</h1>
     <div class="group">
       <label class="fas fa-signature" for="name">User Name</label>
-      <input type="text" name="name"  placeholder="User Name"/><br>
+      <input type="text" name="name" auto placeholder="User Name"/><br>
        </div>
        <div class="group">
          <label class="far fa-envelope" for="email">E-mail</label>
