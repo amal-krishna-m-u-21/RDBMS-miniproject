@@ -18,7 +18,7 @@ if($exists != FALSE)
       if (mysqli_query($conn, $sql)) 
       {
         $aps = md5("Admin@root001.");
-        $sql1 = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('root','00-00-0000','$aps','admin@gmail.com')";
+        $sql1 = "INSERT INTO User_details (user_name,dob, password2, email ) VALUES ('Admin','00-00-0000','$aps','admin@gmail.com')";
          mysqli_query($conn,$sql1);
     } else {
       echo "Error creating table: " . mysqli_error($conn);
