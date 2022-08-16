@@ -1,12 +1,12 @@
 <?php
 
-
+try{ 
 $sql="SELECT * FROM Wating_list WHERE id='1'";
 $result=mysqli_query($conn,$sql);
+}
 
-
-if($result == FALSE)  { 
-
+//if($result == FALSE)  { 
+    catch (Exception $e){ 
 
 
 $wait="CREATE TABLE Wating_list (id INT(30) UNSIGNED AUTO_INCREMENT  PRIMARY KEY ,

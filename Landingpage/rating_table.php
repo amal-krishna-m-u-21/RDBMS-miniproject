@@ -1,7 +1,9 @@
 <?php
-
+try{  
 $exists = mysqli_query($conn,"SELECT * FROM  Rating WHERE r_id ='1'");
-if($exists == FALSE)
+//if($exists == FALSE)
+}
+catch (Exception $e)
 {
 
     $sql ='CREATE TABLE Rating (

@@ -1,7 +1,10 @@
 <?php
-
+try{ 
 $exists = mysqli_query($conn,"SELECT * FROM  App_interest WHERE ui_id ='1'");
-if($exists == FALSE)
+}
+//if($exists == FALSE)
+
+catch (Exception $e)
  {
 
         $sql ='CREATE TABLE App_interest (

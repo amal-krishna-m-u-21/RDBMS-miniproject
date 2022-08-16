@@ -1,12 +1,17 @@
 <?php
-
+try {  
+ 
 $exists = mysqli_query($conn,"SELECT * FROM  User_details WHERE user_id ='1'");
 
 if($exists != FALSE)
 {
  $flag="table exits";
-}else
-{
+}
+}   
+      //catch block  
+catch (Exception $e) {  
+  //code to print exception caught in the block 
+  
   $sql = "CREATE TABLE User_details (
     user_id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     user_name VARCHAR(30) NOT NULL,dob DATE NOT NULL ,
@@ -23,5 +28,10 @@ if($exists != FALSE)
     } else {
       echo "Error creating table: " . mysqli_error($conn);
     }
-}
+  
+
+
+} 
+
+
 ?>

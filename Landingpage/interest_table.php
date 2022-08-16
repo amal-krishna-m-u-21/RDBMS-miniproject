@@ -1,7 +1,9 @@
 <?php
-
+try{  
 $exists = mysqli_query($conn,"SELECT * FROM  Interest WHERE interest_id ='1'");
-if($exists == FALSE)
+//if($exists == FALSE)
+}
+catch (Exception $e)
 {
 
     $sql ='CREATE TABLE Interest (
