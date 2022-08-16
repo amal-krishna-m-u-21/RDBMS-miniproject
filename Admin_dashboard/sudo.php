@@ -67,11 +67,24 @@
     
 </html>
          <?php
+
+
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){ 
       // getting values from form
 
        $interest=$_POST['interest'];
        //creating table if table dosen't exist
        if($interest != ''){
+
+          $chechk=mysqli_query($conn,"SELECT * FROM Interest WHERE interest_name='$interest'");
+          if($chechk == TRUE ){ echo '<script type="text/JavaScript">
+            if(!alert("Welcome back")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Admin_dashboard/sudo.php";
+            </script>';}
+        
+
+
+
        $sql1 = "INSERT INTO Interest (interest_name) VALUES 
        ('$interest')";
        
@@ -88,5 +101,5 @@
                                               }
 
                                              }
-                                              
+}
                                               ?> 
