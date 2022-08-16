@@ -25,9 +25,10 @@ else{
     $flag="table not created";
 }
 }
-else{
+/*else
+{
     $flag="table already exit";
-}
+}*/
 
 
   ?>

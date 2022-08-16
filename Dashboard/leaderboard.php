@@ -43,7 +43,7 @@ $result = mysqli_query($conn, $sql);
     <div class="select">  
     <form action="../../Leaderboard/index.php" method="POST">
 
-        <select class="form-select" aria-label="size 1 select example" name="interest" id="interest">
+        <select class="form-select" aria-label="size 1 select example" name="interest" id="interest" required>
                 <option value="">Select A Interest</option>
                 <?php foreach ($result as $interest) { ?>
                     <option value="<?= $interest['interest_id']; ?>"><?= $interest['interest_name']; ?> </option>
@@ -67,7 +67,7 @@ $result = mysqli_query($conn, $sql);
        
            <form action="../Admin_dashboard/List_item/wait.php" method="post">
            <label>Select type:</label><br>
-           <select name="type" id="type">
+           <select name="type" id="type" required>
                <option value="select">SELECT</option>
                <option value="1">Mobile APP</option>
                <option value="2">Web Page</option>
@@ -76,12 +76,12 @@ $result = mysqli_query($conn, $sql);
 
 
            <br>
-           <input type="text" name="item_name" id="item_name" placeholder="Enter Name of the App/web-Page">
+           <input type="text" name="item_name" id="item_name" placeholder="Enter Name of the App/web-Page" required>
        
            <br><br><br>
            <label for="Name">Enter Url</label>
            <br>
-           <input type="url" name="item_url" id="item" placeholder="Enter the URL">
+           <input type="url" name="item_url" id="item" placeholder="Enter the URL" required>
        
    
            <!--
@@ -124,7 +124,7 @@ $result = mysqli_query($conn, $sql);
        
            {  
                ?><br>
-      <input type="checkbox"  name = "interestlist[]" value="<?= $interest['interest_id'];?>"> 
+      <input type="checkbox"  name = "interestlist[]" value="<?= $interest['interest_id'];?>"  > 
       <label for="">
        <?=$interest['interest_name']; ?> </label>      
            

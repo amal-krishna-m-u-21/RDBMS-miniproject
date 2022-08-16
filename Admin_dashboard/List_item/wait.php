@@ -18,6 +18,10 @@ if($type==1){
     $row=mysqli_num_rows($result);
     if($row != 0){
         $falg="app is already listed";
+        echo '<script type="text/JavaScript">
+  if(!alert("App is already listed")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Dashboard/dashboard.php";
+  </script>';
+
     }
 else{
     $flag=1;
@@ -28,6 +32,10 @@ else{
         $row=mysqli_num_rows($result);
         if($row !=0){
             $falg="Web is already listed";
+            echo '<script type="text/JavaScript">
+  if(!alert("Web page is already listed")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Dashboard/dashboard.php";
+  </script>';
+
         }
         else{
             $flag=1;
@@ -36,6 +44,10 @@ else{
     }
     else{
         echo"invalid entry";
+        echo '<script type="text/JavaScript">
+  if(!alert("Invalid entry")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Dashboard/dashboard.php";
+  </script>';
+
     
     }
     if($flag==1)
@@ -58,11 +70,17 @@ if(!$result){
   
 }else{
     $flag="isertion completed";
-    header('location:../../Dashboard/dashboard.php');
+    echo '<script type="text/JavaScript">
+    if(!alert("Request submitted")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Dashboard/dashboard.php";
+    </script>';
 }
 }
 else{ 
 echo "Item is already listed";
+echo '<script type="text/JavaScript">
+  if(!alert("Item is already listed")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Dashboard/dashboard.php";
+  </script>';
+
 }
 
 
