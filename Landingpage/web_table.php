@@ -1,7 +1,10 @@
 <?php
-
+try{  
 $exists = mysqli_query($conn,"SELECT * FROM  Web WHERE Web_id ='1'");
-if($exists == FALSE)
+}
+catch()
+{
+  if($exists == FALSE)
 {
 
     $sql ='CREATE TABLE Web (
@@ -40,5 +43,5 @@ if($exists == FALSE)
       }
 
 
-}
+}}
 ?>
