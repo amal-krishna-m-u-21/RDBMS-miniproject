@@ -1,8 +1,8 @@
 <?php
 try{  
-$exists = mysqli_query($conn,"SELECT * FROM  Web WHERE Web_id ='1'");
+$exists = mysqli_query($conn,"SELECT * FROM  Web WHERE 1");
 }
-catch()
+catch (Exception $e)
 {
   if($exists == FALSE)
 {

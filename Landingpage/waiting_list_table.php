@@ -1,7 +1,7 @@
 <?php
 
 try{ 
-$sql="SELECT * FROM Wating_list WHERE id='1'";
+$sql="SELECT * FROM Wating_list WHERE 1";
 $result=mysqli_query($conn,$sql);
 }
 

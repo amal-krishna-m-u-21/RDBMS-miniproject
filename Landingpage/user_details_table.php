@@ -1,7 +1,7 @@
 <?php
 try {  
  
-$exists = mysqli_query($conn,"SELECT * FROM  User_details WHERE user_id ='1'");
+$exists = mysqli_query($conn,"SELECT * FROM  User_details WHERE 1");
 
 if($exists != FALSE)
 {

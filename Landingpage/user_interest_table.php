@@ -1,6 +1,6 @@
 <?php
 try{ 
-$exists = mysqli_query($conn,"SELECT * FROM  User_Interest WHERE ui_id ='1'");
+$exists = mysqli_query($conn,"SELECT * FROM  User_Interest WHERE 1");
 //if($exists == FALSE)
 }
 catch (Exception $e)

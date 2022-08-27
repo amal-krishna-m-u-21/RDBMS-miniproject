@@ -1,6 +1,6 @@
 <?php
 try{  
-$exists = mysqli_query($conn,"SELECT * FROM  Rating WHERE r_id ='1'");
+$exists = mysqli_query($conn,"SELECT * FROM  Rating WHERE 1");
 //if($exists == FALSE)
 }
 catch (Exception $e)
