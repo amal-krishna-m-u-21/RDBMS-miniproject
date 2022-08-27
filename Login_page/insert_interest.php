@@ -24,7 +24,7 @@ if($result)
 {
     $_SESSION['status_interest'] = "Inserted succesfully";
     echo '<script type="text/JavaScript">
-    if(!alert("Registration Completed !!! ")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
+    if(!alert("Interest Added sucessfully!!! ")) document.location = "http://'.$_SERVER['HTTP_HOST'].'/Login_page/index.php";
     </script>';
 
 }
