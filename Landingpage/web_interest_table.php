@@ -1,11 +1,13 @@
 <?php
 try{ 
-$exists = mysqli_query($conn,"SELECT * FROM  Web_interest WHERE ui_id ='1'");
+$exists = mysqli_query($conn,"SELECT * FROM  Web_interest WHERE 1");
+
 //if($exists == FALSE)
 }
-catch (Exception $e) 
+catch(Exception $e) 
 
 {
+
 
         $sql ='CREATE TABLE Web_interest (
            id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,

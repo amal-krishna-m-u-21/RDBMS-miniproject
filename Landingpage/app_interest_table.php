@@ -1,6 +1,6 @@
 <?php
 try{ 
-$exists = mysqli_query($conn,"SELECT * FROM  App_interest WHERE ui_id ='1'");
+$exists = mysqli_query($conn,"SELECT * FROM  App_interest WHERE 1");
 }
 //if($exists == FALSE)
 
