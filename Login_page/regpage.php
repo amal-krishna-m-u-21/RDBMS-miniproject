@@ -24,7 +24,7 @@
         <label> DOB</label>
       
            <input type="date" name="dob" value=""
-           min="1997-01-01" max="2030-12-31">
+           min="1997-01-01" max="2030-12-31" required>
     
 
          </div>

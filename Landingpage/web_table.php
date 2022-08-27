@@ -4,8 +4,6 @@ $exists = mysqli_query($conn,"SELECT * FROM  Web WHERE 1");
 }
 catch (Exception $e)
 {
-  if($exists == FALSE)
-{
 
     $sql ='CREATE TABLE Web (
         web_id INT(11) UNSIGNED AUTO_INCREMENT  PRIMARY KEY,
@@ -43,5 +41,5 @@ catch (Exception $e)
       }
 
 
-}}
+}
 ?>
