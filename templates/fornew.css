@@ -1,0 +1,79 @@
+.raw {
+    background-position: 100%;
+    background-color:  rgb(255, 255, 255);
+    margin-top: 60%;
+    width: 100%;
+    height:100%;
+    
+  }
+  .form-group
+  {
+  background-color: rgb(200, 196, 203);
+  border:2px #000000 solid;
+  
+   margin-top: 50%;
+  margin-left:50% ;
+  margin-right: 50%;
+  padding: 20px;
+  width: 50%;
+  height: 50%;
+  position:centre;
+  text-decoration: double;
+  justify-content: center;
+  text-align: center;
+  display:inline block;
+  box-shadow:20px 15px #8e8484;
+}
+
+
+    
+  
+  /* Full-width inputs */
+  input[type=email], input[type=password], input[type=date] {
+    width: 500px;
+    padding: 7px 15px;
+    margin: 8px 0;
+    border: 1px solid rgb(122, 97, 97);
+    box-sizing: border-box;
+  }
+
+  
+  /* Set a style for all buttons */
+ .id {
+    
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 10px 30px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #FFFFFF;
+  background-color: #515858;
+  border: none;
+  border-radius: 9px;
+ 
+  position: center;
+
+    
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+ 
+  span.psw {
+    float: center;
+    padding-top: 16px;
+    color: black;
+    position:center;
+  }
+  
+
+    
+  
+  
